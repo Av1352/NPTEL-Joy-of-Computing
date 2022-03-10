@@ -1,0 +1,54 @@
+NPTEL Week 7
+
+Assignment 7:
+
+1. a) Commas
+2. c) 1, 5, 9, 10, 11, 7, 3, 2, 6
+3. c) Equilateral Triangle
+4. b)
+5. c) gmplot
+6. d)
+7. b) penup()
+8. d) All of the above
+9. a) PIL
+10. c) Both A and B
+
+Programming Assignment 1:
+
+def DiagCalc(L):
+  L_sum=0
+  R_sum=0
+  m=L[::-1]
+  for i in range(len(L)):
+    for j in range(len(L)):
+      if i==j:
+        L_sum+=L[i][j]
+        R_sum+=m[i][j] 
+  print(L_sum)  
+  print(R_sum,end="")
+
+Programming Assignment 2:
+
+import numpy
+from array import *
+
+
+def Transpose(M):
+    arr = numpy.array(M)
+    num_list = arr.transpose().tolist()
+    return(num_list)
+
+Programming Assignment 3:
+
+def snake(M):
+  s = 0
+  sm = []
+  for r in M:
+    m = []
+    s = s+1
+    if s % 2 == 0:
+      m = r[::-1]
+    else:
+      m = r
+    sm += m
+  return(sm)

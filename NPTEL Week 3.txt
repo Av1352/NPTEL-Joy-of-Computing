@@ -1,0 +1,41 @@
+NPTEL Week 3
+
+Assignment 3:
+
+1. c)
+2. c)
+3. a)
+4. b)
+5. d)
+6. a)
+7. a)
+8. b)
+9. c)
+10. a)
+
+Programming Assignment 1:
+
+for i in range(len(L)):
+  if i%2!=0:
+    if len(L)-i<=2:
+      print(L[i], end="")
+    else:
+      print(L[i])
+
+Programming Assignment 2:
+
+print(sorted(L)[:3])
+print(sorted(L)[::-1][:2],end="")
+
+Programming Assignment 3:
+
+def all_even (L):
+  ans=[]
+  for i in L:
+    if i%2==0:
+      ans.append (i)
+  for a in range (len (ans)):
+    if a==len(ans) -1:
+      print (ans [a], end="" )
+    else:
+      print (ans [a])

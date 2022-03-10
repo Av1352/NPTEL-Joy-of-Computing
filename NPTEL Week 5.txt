@@ -1,0 +1,45 @@
+NPTEL Week 5
+
+Assignment 5:
+
+1. b) D = {}
+2. c) Every key must be unique.
+3. d) d.keys()
+4. a) 20 ‘30’
+5. c) (‘a’, 20), (‘b’, 30), (‘c’, 50)
+6. b) Creates a dictionary with keys in range a-t and values 0.
+7. c) Distribute 1000 marbles randomly in every bag.
+8. d)
+9. d) Any sorted list.
+10.b) The largest element of the list.
+
+--------------------------------------------------------------
+
+Programming Assignment 1:
+
+def count_letters(string):
+  d={}
+  for s in string:
+    if s not in d:
+      d[s]=string.count(s)
+  return(d)
+
+Programming Assignment 2:
+
+def uniqueE(L):
+  ans=[]
+  for a in L:
+    if L.count(a)==1:
+      ans.append(a)
+  return(sorted(ans))
+
+Programming Assignment 3:
+
+prime_numbers=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
+               53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109,
+               113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197,
+               199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293]
+for a in L:
+  if a in prime_numbers:
+    print(a,end="")
+    break

@@ -1,0 +1,55 @@
+NPTEL Week 6
+
+Assignment 6:
+
+1. a) Shift every letter in a given word by 'value'.
+2. c) Wjg Mqa RI Fqorwvkpi
+3. b) Recursion decreases the speed of the program.
+4. b) Calculating product of first n terms.
+5. a) 55
+6. b) Runs into infinite loop
+7. c)
+8. a) Returns product of elements from 5th index onwards.
+9. b) False
+10.d)
+
+----------------------------------------------------------------
+
+Programming Assignment 1:
+
+print(sorted(L).index(L[K-1])+1,end="")
+
+
+Programming Assignment 2:
+
+Cap=list("ABCDEFGHIJKLMNOPQRSTUVMWXYZ")
+Small=list('abcdefghijklmnopqrstuvwxyz')
+ans=""
+for a in S:
+  if a=='a':
+    ans+='y'
+  elif a=='b':
+    ans+='z'
+  elif a=='A':
+    ans+='X' 
+  elif a=='B':
+    ans+='Y'
+  elif a=='C':
+    ans+='Z'
+  elif a=='W':
+    ans+='T'
+  else:
+    if a in Cap:
+      ans+=Cap[Cap.index(a)-3]
+    elif a in Small:
+      ans+=Small[Small.index(a)-2]
+    else:
+      ans+=a
+print(ans,end="")
+
+
+Programming Assignment 3:
+
+def whole(N):
+  return(sum(list(range(N+1))))
+
