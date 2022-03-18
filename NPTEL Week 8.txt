@@ -1,0 +1,43 @@
+NPTEL Week 8
+
+Assignment 8:
+
+1. b) Dates = (12,23,3,4)
+2. d) We can count the number of instances of an element.
+3. c) 5,4,3,2
+4. a) facebook
+5. b) When player 2 will enter the next letter with respect to player 1.
+6. d) Both B and C
+7. a) Helps to work with human language data.
+8. c) ['y', 't', 'r', 'h', 'h', 'e', 'e', 'e', '!']
+9. b) False
+10. a) Converting lower case letters into upper case.
+
+Programming Assignment 1:
+
+def squareT(t):
+  L=[]
+  for i in t:
+    L.append(i*i)
+  return(tuple(list(t)+L))
+
+Programming Assignment 2:
+
+def replaceV(s):
+  a=s
+  v=list("aeiou"+"AEIOU")
+  for i in range(len(s)-2):
+    if s[i] in v and s[i+1] in v and s[i+2] in v:
+        a=a.replace(s[i]+s[i+1]+s[i+2],'_')
+  return(a)
+
+Programming Assignment 3:
+
+z=[]
+a=[]
+for i in L:
+  if i!=0:
+    a.append(i)
+  else:
+    z.append(0)
+print(a+z,end="")
