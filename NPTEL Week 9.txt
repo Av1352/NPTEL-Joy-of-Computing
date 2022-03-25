@@ -1,0 +1,50 @@
+NPTEL Week 9
+
+Assignment 9:
+
+1. b) By analyzing word length with previous books. 
+2. a) tuple(L)
+3. a) True
+4. d) 
+5. a) 4
+6. d) 3
+7. d) All of the above.
+8. a) 10,6
+9. a) 1
+10. b) getpixel()
+
+Programming Assignment 1:
+
+def subStr(s1,s2):
+  return(s2 in s1)
+
+Programming Assignment 2:
+
+def mergeDic(d1,d2):
+  for k in d2:
+    if k not in d1:
+      d1[k]=d2[k]
+  return(d1)
+
+Programming Assignment 3:
+
+N=list(str(n))
+P=[]
+for i in N:
+  if i not in P:
+    P.append(i)
+ans=[]
+for i in range(len(P)):
+  a=[]
+  for j in range(len(N)):
+    if(P[i]==N[j]):
+      a.append(j)
+  ans.append(a)
+#print(ans)
+
+for i in range(len(P)):
+  print(int(P[i]), "",end="")
+  #print(len(ans[i]))
+  for j in range(len(ans[i])):
+               print(int(ans[i][j]),"",end="")
+  print()
